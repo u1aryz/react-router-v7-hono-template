@@ -18,7 +18,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 	const { extra, url } = loaderData;
 	return (
 		<div>
-			<h1>React Router and Hono</h1>
+			<h1 className="text-2xl">React Router and Hono</h1>
 			<h2>URL is {url}</h2>
 			<h3>Extra is {extra}</h3>
 		</div>
