@@ -1,0 +1,19 @@
+[tools]
+node = "22"
+npm = "10"
+
+[hooks]
+postinstall = "npm i"
+
+[tasks.dev]
+description = "Start the dev server"
+run = "npm run dev"
+
+[tasks.start]
+description = "Start the prod server"
+run = ["npm run build", "npm run start"]
+
+[tasks.format]
+description = "Format source code"
+run = ["npm run format", "npm run typecheck"]
+alias = "lint"
