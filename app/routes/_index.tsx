@@ -1,5 +1,5 @@
 import type { LoaderFunctionArgs } from "react-router";
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/_index";
 
 export function meta(_metaArgs: Route.MetaArgs) {
 	return [
@@ -14,7 +14,7 @@ export const loader = (args: LoaderFunctionArgs) => {
 	return { extra, url };
 };
 
-export default function Home({ loaderData }: Route.ComponentProps) {
+export default function Index({ loaderData }: Route.ComponentProps) {
 	const { extra, url } = loaderData;
 	return (
 		<div>
