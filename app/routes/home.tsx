@@ -1,7 +1,7 @@
 import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/home";
 
-export function meta({}: Route.MetaArgs) {
+export function meta(metaArgs: Route.MetaArgs) {
 	return [
 		{ title: "New React Router App" },
 		{ name: "description", content: "Welcome to React Router!" },
