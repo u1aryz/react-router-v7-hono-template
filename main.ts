@@ -1,7 +1,7 @@
 import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
 import handle from "hono-react-router-adapter/node";
-// @ts-ignore
+// @ts-expect-error
 import * as build from "./build/server";
 import { getLoadContext } from "./load-context";
 import server from "./server";
